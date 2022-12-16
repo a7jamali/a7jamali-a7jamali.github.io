@@ -1,0 +1,65 @@
+.people {
+    
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        margin-bottom: 80px;
+        padding: 40px 20px;
+
+        @include tablet {
+            flex-flow: row nowrap;
+            min-width: 99%;
+            margin-bottom: 0;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        aspect-ratio: 1 !important;
+
+        @include tablet {
+            width: 40%;
+            aspect-ratio: 1 !important;
+            margin-right: 30px;
+        }
+        
+    }
+
+    &__title {
+        margin: 8px 0;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        
+        font-size: 10px;
+        color: #FFFFFF;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+
+    &__name {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+
+        font-family: sans-serif;
+        font-size: 36px;
+        color: #FFFFFF;
+        text-align: left;
+    }
+
+    &__bio {
+        font-family: sans-serif;
+        font-size: 12px;
+        color: #FFFFFF;
+        letter-spacing: 0.25px;
+        line-height: 18px;
+    }
+
+    &__textbox {
+
+        @include tablet {
+            padding-top: 40px;
+        }
+    }
+
+}

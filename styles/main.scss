@@ -1,0 +1,18 @@
+@import "./partials/breakpoints";
+@import "./partials/colors";
+@import "./partials/horizontal-scroll";
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+@import "./partials/static-grid";
+@import "./partials/grid-wrapper";
+@import "./partials/page-wrapper";
+@import "./partials/header";
+@import "./partials/people";
+// @import "./partials/horizontal";

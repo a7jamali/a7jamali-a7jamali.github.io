@@ -1,0 +1,27 @@
+.header {
+    width: 100vw;
+    height: 120px;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 20px 30px;
+    align-items: center;
+    background: $midnight;
+    position: relative;
+    z-index: 999;
+
+    @include tablet {
+        width: 120px;
+        height: 100vh;
+    }
+
+
+    &__logo {
+        max-width: 60px;
+        color: red;
+    }
+
+}
+
+#fixed {
+    position: fixed;
+}
