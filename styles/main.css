@@ -171,6 +171,19 @@ body {
   }
 }
 
+.home__outer {
+  height: 100%;
+  width: 100%;
+  background: grey;
+  position: relative;
+}
+.home__inner {
+  background: rgb(207, 118, 118);
+  width: 150px;
+  height: 100px;
+  position: absolute;
+}
+
 .people__wrapper {
   width: 100%;
   display: flex;
