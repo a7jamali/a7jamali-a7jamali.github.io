@@ -184,6 +184,18 @@ body {
   position: absolute;
 }
 
+.arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 10px;
+  border-color: transparent transparent transparent #333;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .people__wrapper {
   width: 100%;
   display: flex;

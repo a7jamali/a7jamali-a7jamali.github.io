@@ -1,44 +1,50 @@
-var yellowDiv = document.createElement('div');
-yellowDiv.style.width = '500px';
-yellowDiv.style.height = '500px';
-yellowDiv.style.backgroundColor = 'yellow';
-yellowDiv.style.position = 'relative';
-document.body.appendChild(yellowDiv);
+const dvds = document.querySelectorAll('#dvd');
+const container = document.querySelector('.home__outer');
 
-var blackDiv = document.createElement('div');
-blackDiv.style.width = '100px';
-blackDiv.style.height = '100px';
-blackDiv.style.backgroundColor = 'black';
-blackDiv.style.position = 'absolute';
-yellowDiv.appendChild(blackDiv);
+// Store the initial positions and velocities for each element
+const elements = [];
 
+for (const dvd of dvds) {
+  // Generate a random starting position within the container
+  const x = Math.random() * (container.offsetWidth - dvd.offsetWidth);
+  const y = Math.random() * (container.offsetHeight - dvd.offsetHeight);
 
-var x = 0;
-var y = 0;
-var xDirection = 1;
-var yDirection = 1;
+  // Generate a random velocity
+  const dx = Math.random() * 2 - 1;
+  const dy = Math.random() * 2 - 1;
 
-var moveBlackDiv = function() {
-  x += xDirection;
-  y += yDirection;
-  if (x >= 400) {
-    xDirection = -1;
-  } else if (x <= 0) {
-    xDirection = 1;
+  elements.push({
+    element: dvd,
+    x,
+    y,
+    dx,
+    dy
+  });
+}
+
+function updatePosition() {
+  for (const element of elements) {
+    element.x += element.dx;
+    element.y += element.dy;
+
+    // Check if the element has reached the right or left edge of the container
+    if (element.x + element.element.offsetWidth > container.offsetWidth || element.x < 0) {
+      element.dx = -element.dx;
+    }
+    // Check if the element has reached the top or bottom edge of the container
+    if (element.y + element.element.offsetHeight > container.offsetHeight || element.y < 0) {
+      element.dy = -element.dy;
+    }
+
+    element.element.style.transform = `translate(${element.x}px, ${element.y}px)`;
   }
-  if (y >= 400) {
-    yDirection = -1;
-  } else if (y <= 0) {
-    yDirection = 1;
-  }
-  blackDiv.style.left = x + 'px';
-  blackDiv.style.top = y + 'px';
-  window.requestAnimationFrame(moveBlackDiv);
-};
 
-moveBlackDiv();
+  requestAnimationFrame(updatePosition);
+}
 
-var x = Math.floor(Math.random() * 400);
-var y = Math.floor(Math.random() * 400);
-var xDirection = Math.random() > 0.5 ? 1 : -1;
-var yDirection = Math.random() > 0.5 ? 1 : -1;
+updatePosition();
+
+
+
+
+
