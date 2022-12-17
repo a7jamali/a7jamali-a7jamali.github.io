@@ -2,8 +2,9 @@
     width: 100vw;
     height: 120px;
     display: flex;
-    flex-flow: column nowrap;
-    padding: 20px 30px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 20px 20px;
     align-items: center;
     background: $midnight;
     position: relative;
@@ -12,6 +13,8 @@
     @include tablet {
         width: 120px;
         height: 100vh;
+        flex-flow: column nowrap;
+
     }
 
 
@@ -20,8 +23,43 @@
         color: red;
     }
 
+    &__button {
+        background: none;
+        outline: none;
+        border: none;
+        color: $white;
+        font-size: 60px;
+        cursor: pointer;
+        transition: color 0.25s ease-in-out;
+        position: absolute;
+        right: 20px;
+
+
+        &:hover {
+            color: silver;
+            
+        }
+
+        @include tablet {
+            position: relative;
+            right: auto;
+        }
+    }
+
 }
 
 #fixed {
     position: fixed;
+}
+
+.rotate {
+    transform: rotate(45deg);
+}
+
+#instagram-logo {
+    display: none;
+
+    @include tablet {
+        display: initial;
+    }
 }

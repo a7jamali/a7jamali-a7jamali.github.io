@@ -21,7 +21,7 @@
   height: 100%;
   width: 100%;
   position: relative;
-  border: 1px solid #eaded1;
+  border: 1px solid #fff;
   overflow: hidden;
 }
 @media only screen and (min-width: 1000px) {
@@ -83,8 +83,9 @@ body {
   width: 100vw;
   height: 120px;
   display: flex;
-  flex-flow: column nowrap;
-  padding: 20px 30px;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 20px 20px;
   align-items: center;
   background: #12181f;
   position: relative;
@@ -94,15 +95,80 @@ body {
   .header {
     width: 120px;
     height: 100vh;
+    flex-flow: column nowrap;
   }
 }
 .header__logo {
   max-width: 60px;
   color: red;
 }
+.header__button {
+  background: none;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  font-size: 60px;
+  cursor: pointer;
+  transition: color 0.25s ease-in-out;
+  position: absolute;
+  right: 20px;
+}
+.header__button:hover {
+  color: silver;
+}
+@media only screen and (min-width: 750px) {
+  .header__button {
+    position: relative;
+    right: auto;
+  }
+}
 
 #fixed {
   position: fixed;
+}
+
+.rotate {
+  transform: rotate(45deg);
+}
+
+#instagram-logo {
+  display: none;
+}
+@media only screen and (min-width: 750px) {
+  #instagram-logo {
+    display: initial;
+  }
+}
+
+.nav {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #12181f;
+  overflow: auto;
+  display: none;
+}
+.nav__box {
+  border: 1px solid #ffffff;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.nav__link {
+  font-family: sans-serif;
+  font-size: 10vw;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: left;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  padding-left: 40px;
+}
+@media only screen and (min-width: 750px) {
+  .nav__link {
+    font-size: 10vw;
+  }
 }
 
 .people__wrapper {

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome | 44 LLC</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
 
 </head>
@@ -16,9 +17,17 @@
     <div class="page-wrapper">
 
         <header class="header">
+
             <a class="header__logo-link" href="./index.html">
                 <img class="header__logo" src="./assets/logos/44-logo.webp" alt="44 LLC Logo">
             </a>
+
+            <button class="header__button" onclick="$(this).toggleClass('rotate');">&plus;</button>
+
+            <a class="header__logo-link" href="./index.html">
+                <img class="header__logo" id="instagram-logo" src="./assets/icons/instagram.svg" alt="44 LLC Logo">
+            </a>
+
         </header>
 
         
@@ -27,6 +36,19 @@
 
             
             <div class="static__grid-outer">
+
+                <nav class="nav">
+
+                    <div class="nav__box"><a href="./index.html" class="nav__link">Index &#x2197;</a><img src="" alt="" class="nav__arrows"></div>
+                    <div class="nav__box"><a href="./people.html" class="nav__link">People &#x2197;</a><img src="" alt="" class="nav__arrows"></div>
+                    <div class="nav__box"><a href="./manifesto.html" class="nav__link">Manifesto &#x2197;</a><img src="" alt="" class="nav__arrows"></div>
+                    <div class="nav__box"><a href="./sounds.html" class="nav__link">Sounds &#x2197;</a><img src="" alt="" class="nav__arrows"></div>
+                    <div class="nav__box"><a href="./happenings.html" class="nav__link">Happenings &#x2197;</a><img src="" alt="" class="nav__arrows"></div>
+                    <div class="nav__box"><a href="./contact.html" class="nav__link">Contact &#x2197;</a><img src="" alt="" class="nav__arrows"></div>
+                    
+                    <div class="nav__box"><a href="" class="nav__link"></a><img src="" alt="" class="nav__arrows"></div>
+
+                </nav>
                 <!-- <object class="static__grid-svg" data="./Perspective_Grid_01.svg" type="image/svg+xml"></object>
                 <img src="./Perspective_Grid_01.svg" alt="" class="static__grid-svg"> -->
 
@@ -42,5 +64,6 @@
 
     </div>
 
+    <script src="./scripts/nav.js"></script>
 </body>
 </html>
