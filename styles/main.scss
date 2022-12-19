@@ -5,6 +5,7 @@
 
 *, *::after, *::before {
     box-sizing: border-box;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     -ms-overflow-style: none;  /* IE and Edge */
@@ -24,7 +25,11 @@
 @import "./partials/header";
 @import "./partials/nav";
 
+@import "./partials/splash";
 @import "./partials/home";
 @import "./partials/dvd";
+@import "./partials/manifesto";
 @import "./partials/people";
+@import "./partials/happenings";
+@import "./partials/contact";
 // @import "./partials/horizontal";

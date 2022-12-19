@@ -13,6 +13,8 @@
         position: relative;
         border: 1px solid #fff;
         overflow: hidden;
+        overflow: scroll;
+
 
         @include tablet {
             // border-bottom: none;

@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | 44 LLC</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/follow.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
 
 
 </head>
 
-<body>
+<body class="demo-4 loading">
 
 
     <div class="page-wrapper">
@@ -37,6 +38,32 @@
 
             
             <div class="static__grid-outer">
+
+                    <div class="content">
+                        <div class="fold-content" id="base-content">
+                            <!-- CONTENT INSIDE HERE -->
+
+
+                            <img class="manifesto__svg" src="./assets/manifest-svgs/1.svg" alt="">
+                            <img class="manifesto__svg" src="./assets/manifest-svgs/2.svg" alt="">
+                            <img class="manifesto__svg" src="./assets/manifest-svgs/3.svg" alt="">
+
+                            
+                        </div>
+                        <div class="screen">
+                            <div class="folds" id="folds">
+                                <div class="fold fold-center" id="fold-center"></div>
+                                <div class="fold-3d fold-3d-top top-wrapper">
+                                    <div class="fold fold-top" id="fold-top"></div>
+                                </div>
+                                <div class="fold-3d fold-3d-bottom bottom-wrapper">
+                                    <div class="fold fold-bottom" id="fold-bottom"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-debug" id="btn-debug">Debug</button>
+                    </div>
+            
 
                 <nav class="nav">
 
@@ -66,5 +93,7 @@
     </div>
 
     <script src="./scripts/nav.js"></script>
+    <script src="./scripts/imagesloaded.pkgd.min.js"></script>
+    <script src="./scripts/follow.js"></script>
 </body>
 </html>

@@ -1,0 +1,86 @@
+.splash {
+
+    &__wrapper {
+        width: 80%;
+        height: 20%;
+        display: flex;
+        flex-flow: row wrap;
+
+        @include tablet {
+            flex-flow: row nowrap;
+        }
+    }
+
+    &__name {
+
+        &-div {
+            width: 50%;
+            height: 100%;
+            order: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px $white solid;
+
+
+            @include tablet {
+                // width: 25%;
+            }
+
+        }
+
+        &-heading {
+            color: $white;
+            font-size: 2rem;
+            user-select: none;
+        }
+    }
+    
+    &__graphics {
+
+        &-div {
+            width: 100%;
+            height: 100%;
+            order: 3;
+            border: 1px $white solid;
+            background: red;
+
+            @include tablet {
+                order: 2;
+                // width: 50%;
+
+            }
+
+        }
+    }
+    
+    &__enter {
+
+        &-div {
+            width: 50%;
+            height: 100%;
+            order: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px $white solid;
+
+
+
+
+            @include tablet {
+                order: 3;
+                // width: 25%;
+
+            }
+
+        }
+
+        &-link {
+            color: $white;
+            font-size: 2rem;
+            text-decoration: none;
+        }
+    }
+    
+}
