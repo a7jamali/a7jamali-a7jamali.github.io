@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | 44 LLC</title>
+    <title>Sounds | 44 LLC</title>
     <link rel="stylesheet" href="./styles/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
@@ -17,7 +17,7 @@
     <div class="page-wrapper">
 
         <header class="header">
-            
+
             <a class="header__logo-link" href="./index.html">
                 <img class="header__logo" src="./assets/logos/44-logo.webp" alt="44 LLC Logo">
             </a>
@@ -57,6 +57,40 @@
 
                 <div class="static__grid-inner">
 
+
+                    <div class="home__outer">
+
+                        <div class="sounds__div" id="dvd">
+                            <iframe class="sounds__iframe" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1342009411&color=%2312181f&auto_play=false&sharing=false&liking=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <div class="home__inner-arrow hide">&rarr;</div>
+                        </div>
+
+                        <div class="sounds__div" id="dvd">
+                            <iframe class="sounds__iframe" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1342010791&color=%2312181f&auto_play=false&sharing=false&liking=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <div class="home__inner-arrow hide">&rarr;</div>
+                        </div>
+
+                        <div class="sounds__div" id="dvd">
+                            <iframe class="sounds__iframe" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1342011907&color=%2312181f&auto_play=false&sharing=false&liking=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <div class="home__inner-arrow hide">&rarr;</div>
+                        </div>
+
+                        <div class="sounds__div" id="dvd">
+                            <iframe class="sounds__iframe" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1342013047&color=%2312181f&auto_play=false&sharing=false&liking=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <div class="home__inner-arrow hide">&rarr;</div>
+                        </div>
+
+                        <div class="sounds__div" id="dvd">
+                            <iframe class="sounds__iframe" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1342013560&color=%2312181f&auto_play=false&sharing=false&liking=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <div class="home__inner-arrow hide">&rarr;</div>
+                        </div>
+
+
+                        
+                    </div>
+
+
+
                 
                 </div>
             </div>
@@ -65,5 +99,16 @@
     </div>
 
     <script src="./scripts/nav.js"></script>
+    <script src="./scripts/dvd.js"></script>
+    <script src="./scripts/home.js"></script>
+    <script>
+        $('.sounds__div').hover(function() {
+  // on mouse enter
+  $('.sounds__div').not(this).css('opacity', '0.25');
+}, function() {
+  // on mouse leave
+  $('.sounds__div').not(this).css('opacity', '1');
+});
+    </script>
 </body>
 </html>

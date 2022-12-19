@@ -16,6 +16,11 @@
     display: none;
   }
 
+  .hide {
+    display: none !important;
+    opacity: 0 !important;
+  }
+
 
 
 
@@ -31,5 +36,6 @@
 @import "./partials/manifesto";
 @import "./partials/people";
 @import "./partials/happenings";
+@import "./partials/sounds";
 @import "./partials/contact";
 // @import "./partials/horizontal";

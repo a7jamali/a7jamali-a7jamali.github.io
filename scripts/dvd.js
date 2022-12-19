@@ -4,9 +4,9 @@ const container = document.querySelector('.home__outer');
 const containerWidth = container.offsetWidth;
 const containerHeight = container.offsetHeight;
 
-// Calculate the required velocity to take 10 seconds to traverse the width of the container
-const velocityX = containerWidth / (20 * 60); // 10 seconds * 60 frames per second
-const velocityY = containerHeight / (20 * 60); // 10 seconds * 60 frames per second
+// Calculate the required velocity to take 0 seconds to traverse the width of the container
+const velocityX = containerWidth / (60 * 60); // 10 seconds * 60 frames per second
+const velocityY = containerHeight / (60 * 60); // 10 seconds * 60 frames per second
 
 // Store the initial positions and velocities for each element
 const elements = [];

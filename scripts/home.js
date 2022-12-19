@@ -1,3 +1,4 @@
+//SCRIBBLE
 $('.home__inner').hover(function() {
     // Change the background of the hovered element to "../assets/backgrounds/scribble.svg" and set the background size to "cover"
     $(this).css({
@@ -16,9 +17,61 @@ $('.home__inner').hover(function() {
   });
   
   
+//BACKGROUNDS
+//Contact
+  $('.home__outer .c-link').hover(function() {
+    // Get the width of the home__outer element
+    var outerWidth = $('.home__outer').width();
+  
+    // Get the position of the c-link element relative to the home__outer element
+    var linkPosition = $(this).position();
+  
+    // Calculate whether the c-link element is on the right half of the home__outer element
+    var isRightHalf = linkPosition.left > (outerWidth / 2);
+  
+    // If the c-link element is on the right half of the home__outer element, flip the c-bg element horizontally
+    if (isRightHalf) {
+      $('#c-bg').css('transform', 'scaleX(-1)');
+    } else {
+      $('#c-bg').css('transform', 'scaleX(1)');
+    }
+  
+    // Display the c-bg element
+    $('#c-bg').fadeIn(333);
+  }, function() {
+    // Hide the c-bg element when the mouse is no longer hovering over the c-link element
+    $('#c-bg').fadeOut(333);
+  });
 
 
-$('.home__outer .m-link').hover(function() {
+//Happenings
+  $('.home__outer .h-link').hover(function() {
+    // Get the width of the home__outer element
+    var outerWidth = $('.home__outer').width();
+  
+    // Get the position of the h-link element relative to the home__outer element
+    var linkPosition = $(this).position();
+  
+    // Calculate whether the h-link element is on the right half of the home__outer element
+    var isRightHalf = linkPosition.left > (outerWidth / 2);
+  
+    // If the h-link element is on the right half of the home__outer element, flip the h-bg element horizontally
+    if (isRightHalf) {
+      $('#h-bg').css('transform', 'scaleX(-1)');
+    } else {
+      $('#h-bg').css('transform', 'scaleX(1)');
+    }
+  
+    // Display the h-bg element
+    $('#h-bg').fadeIn(333);
+  }, function() {
+    // Hide the h-bg element when the mouse is no longer hovering over the h-link element
+    $('#h-bg').fadeOut(333);
+  });
+  
+
+//Manifesto
+  $('.home__outer .m-link').hover(function() {
     // Get the width of the home__outer element
     var outerWidth = $('.home__outer').width();
   
@@ -42,3 +95,54 @@ $('.home__outer .m-link').hover(function() {
     $('#m-bg').fadeOut(333);
   });
   
+  
+//People
+$('.home__outer .p-link').hover(function() {
+  // Get the width of the home__outer element
+  var outerWidth = $('.home__outer').width();
+
+  // Get the position of the p-link element relative to the home__outer element
+  var linkPosition = $(this).position();
+
+  // Calculate whether the p-link element is on the right half of the home__outer element
+  var isRightHalf = linkPosition.left > (outerWidth / 2);
+
+  // If the p-link element is on the right half of the home__outer element, flip the p-bg element horizontally
+  if (isRightHalf) {
+    $('#p-bg').css('transform', 'scaleX(-1)');
+  } else {
+    $('#p-bg').css('transform', 'scaleX(1)');
+  }
+
+  // Display the p-bg element
+  $('#p-bg').fadeIn(333);
+}, function() {
+  // Hide the p-bg element when the mouse is no longer hovering over the p-link element
+  $('#p-bg').fadeOut(333);
+});
+
+
+//Sounds
+$('.home__outer .s-link').hover(function() {
+  // Get the width of the home__outer element
+  var outerWidth = $('.home__outer').width();
+
+  // Get the position of the s-link element relative to the home__outer element
+  var linkPosition = $(this).position();
+
+  // Calculate whether the s-link element is on the right half of the home__outer element
+  var isRightHalf = linkPosition.left > (outerWidth / 2);
+
+  // If the s-link element is on the right half of the home__outer element, flip the s-bg element horizontally
+  if (isRightHalf) {
+    $('#s-bg').css('transform', 'scaleX(-1)');
+  } else {
+    $('#s-bg').css('transform', 'scaleX(1)');
+  }
+
+  // Display the s-bg element
+  $('#s-bg').fadeIn(333);
+}, function() {
+  // Hide the s-bg element when the mouse is no longer hovering over the s-link element
+  $('#s-bg').fadeOut(333);
+});

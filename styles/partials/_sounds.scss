@@ -1,0 +1,17 @@
+.sounds {
+
+    &__div {
+        position: absolute;
+        width: 25%;
+        aspect-ratio: 1 !important;
+        transition: opacity 0.333s ease-in-out;
+
+    }
+
+    &__iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+}
