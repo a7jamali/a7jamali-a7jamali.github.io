@@ -1,5 +1,31 @@
 .sounds {
 
+    &__h1 {
+
+
+        color: $white;
+        font-family: "TTI", sans-serif;
+        font-weight: 700;
+        font-size: 60px;
+        width: max-content;
+        background: url("../../assets/backgrounds/scribble.svg");
+        background-size: cover;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        text-transform: uppercase;
+
+
+        @include tablet {
+            font-size: 80px;
+
+
+        }
+
+        
+    }
+
+
     &__div {
         position: absolute;
         width: 25%;

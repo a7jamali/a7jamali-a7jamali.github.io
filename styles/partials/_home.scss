@@ -32,9 +32,10 @@
 
         &-link {
             font-size: 3vw;
-            font-family: sans-serif;
+            font-family: "TTI", sans-serif;
             text-decoration: none;
             color: $white;
+            text-transform: uppercase;
         }
         
 
@@ -42,7 +43,7 @@
             margin-left: 5px;
             // background: red;
             font-size: 3vw;
-            font-family: sans-serif;
+            font-family: "TTI", sans-serif;
             text-decoration: none;
             color: $white;
 

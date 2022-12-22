@@ -13,7 +13,7 @@
         position: relative;
         border: 1px solid #fff;
         overflow: hidden;
-        overflow: scroll;
+        // overflow: scroll;
 
 
         @include tablet {
@@ -50,23 +50,13 @@
         
         }
 
-        @include monitor {
+        @include twok {
             // height: 80%;
-            // width: ;
+            // width: 72.727272%;
             // aspect-ratio: 1.5046296444;
         }
 
 
     }
-
-}
-
-body {
-    background: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
 
 }

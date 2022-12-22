@@ -1,11 +1,13 @@
 @import "./partials/breakpoints";
 @import "./partials/colors";
+@import "./partials/fonts";
 @import "./partials/horizontal-scroll";
 
 
 *, *::after, *::before {
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "TTI", sans-serif;
+    font-weight: 700;
     margin: 0;
     padding: 0;
     -ms-overflow-style: none;  /* IE and Edge */
@@ -39,3 +41,22 @@
 @import "./partials/sounds";
 @import "./partials/contact";
 // @import "./partials/horizontal";
+
+
+.div {
+
+  &__bottom {
+    width: 30%;
+    height: 30%;
+    background: yellow;
+    overflow: scroll;
+  }
+
+  &__center {
+    width: 30%;
+    height: 30%;
+    background: red;
+    overflow: scroll;
+  }
+
+}

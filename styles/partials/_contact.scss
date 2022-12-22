@@ -46,7 +46,7 @@
         }
 
         &-text {
-            font-family: monospace;
+            font-family: "TTI-mono", monospace;
             color: $white;
             text-decoration: none;
             font-size: 24px;
@@ -100,6 +100,79 @@
     }
 
 
+    &__email {
+        
+        
+
+        &-wrapper {
+            display: flex;
+            width: 100%;
+            height: 50px;
+            border: 1px $white solid;
+            background: $midnight;
+            margin-bottom: 40px;
+
+            @include tablet {
+                width: 150%;
+            }
+        }
+
+        &-div {
+            width: 90%;
+            height: 100%;
+            outline: none;
+            border: none;
+            background: none;
+
+        }
+
+        &-input {
+            width: 100%;
+            height: 100%;
+            padding-left: 10px;
+            outline: none;
+            border: none;
+            color: white;
+            font-family: "TTI-mono";
+            background: none;
+
+            
+
+            &::placeholder {
+                color: $white;
+                font-family: "TTI-mono";
+                background: none;
+
+
+            }
+        }
+
+    
+
+        &-clear {
+            width: 10%;
+            height: 100%;
+            outline: none;
+            border: none;
+            background: none;
+
+
+        }
+
+        &-button {
+            height: 100%;
+            width: 100%;
+            outline: none;
+            border: none;
+            color: $white;
+            background: none;
+            font-size: 2rem;
+            font-family: "TTI", sans-serif;
+
+
+        }
+    }
 
 
 }
+

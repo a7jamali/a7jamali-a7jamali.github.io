@@ -1,7 +1,89 @@
 .manifesto {
+    
+    &__head {
+
+
+        color: $white;
+        font-family: "TTI", sans-serif;
+        font-weight: 700;
+        font-size: 5vw;
+        margin: 250px 0;
+        width: max-content;
+        background: url("../../assets/backgrounds/scribble.svg");
+        background-size: cover;
+        text-transform: uppercase;
+
+
+        @include tablet {
+            // font-size: 80px;
+
+
+        }
+
+        
+    }
+    &__bar {
+
+        &-top {
+            position: fixed;
+            width: 100vw;
+            height: 20px;
+            background: $midnight;
+            top: 120px;
+            left: 0;
+            z-index: 9999;
+            @include tablet {display: none;}
+
+        }
+
+        &-bottom {
+            position: fixed;
+            width: 100vw;
+            height: 20px;
+            background: $midnight;
+            bottom: 0;
+            left: 0;
+            z-index: 9999;
+            @include tablet {display: none;}
+
+        }
+
+    }
+
+    
 
     &__svg {
         width: 100%;
         margin: 200px 0;
+        overflow-x: visible;
+        position: relative;
+    }
+
+    &__text {
+
+        &-white {
+            color: $white;
+            font-size: 3.4vw;
+            margin: 200px 0;
+            font-family: "TTI", sans-serif;
+
+
+        }
+
+        &-orange {
+            color: $orange;
+            font-size: 1.5vw;
+            margin: 200px 0 20vh 0;
+            font-family: "TTI", sans-serif;
+
+
+            @include tablet {
+                margin: 200px 0 40vh 0;
+
+
+            }
+
+
+        }
     }
 }
