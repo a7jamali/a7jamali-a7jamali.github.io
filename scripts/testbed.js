@@ -410,3 +410,172 @@ if ($(window).width() < 768) {
 
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$(document).ready(function() {
+  // Initialize all boxes to be hidden
+  $('.sectors-box').hide();
+
+  // Set bottom padding of .solutions-industries-sections to 70px
+  $('.solutions-industries-sections').css('padding-bottom', '70px');
+
+  // Bind click event to .t-1 element
+  $('.t-1').click(function() {
+    // Slide .box-1 down into view
+    $('.box-1').slideToggle(400);
+
+    // Slide up and hide all other .box elements
+    $('.sectors-box').not('.box-1').slideUp(400);
+
+    // Set the opacity of all other .t elements to 50%
+    $('.sectors-columns-div').not('.t-1').css('opacity', '0.5');
+
+    // Set the opacity of .t-1 to 100%
+    $('.t-1').css('opacity', '1');
+  });
+
+  // Bind click event to .t-2 element
+  $('.t-2').click(function() {
+    // Slide .box-2 down into view
+    $('.box-2').slideToggle(400);
+
+    // Slide up and hide all other .box elements
+    $('.sectors-box').not('.box-2').slideUp(400);
+
+    // Set the opacity of all other .t elements to 50%
+    $('.sectors-columns-div').not('.t-2').css('opacity', '0.5');
+
+    // Set the opacity of .t-2 to 100%
+    $('.t-2').css('opacity', '1');
+  });
+
+  // Bind click event to .t-3 element
+  $('.t-3').click(function() {
+    // Slide .box-3 down into view
+    $('.box-3').slideToggle(400);
+
+    // Slide up and hide all other .box elements
+    $('.sectors-box').not('.box-3').slideUp(400);
+
+    // Set the opacity of all other .t elements to 50%
+    $('.sectors-columns-div').not('.t-3').css('opacity', '0.5');
+
+    // Set the opacity of .t-3 to 100%
+    $('.t-3').css('opacity', '1');
+  });
+
+  // Bind click event to .t-4 element
+  $('.t-4').click(function() {
+    // Slide .box-4 down into view
+    $('.box-4').slideToggle(400);
+
+    // Slide up and hide all other .box elements
+    $('.sectors-box').not('.box-4').slideUp(400);
+
+    // Set the opacity of all other .t elements to 50%
+    $('.sectors-columns-div').not('.t-4').css('opacity', '0.5');
+
+    // Set the opacity of .t-4 to 100%
+    $('.t-4').css('opacity', '1');
+  });
+
+  // Bind click event to .t-5 element
+  $('.t-5').click(function() {
+    // Slide .box-5 down into view
+    $('.box-5').slideToggle(400);
+
+    // Slide up and hide all other .box elements
+    $('.sectors-box').not('.box-5').slideUp(400);
+
+    // Set the opacity of all other .t elements to 50%
+    $('.sectors-columns-div').not('.t-5').css('opacity', '0.5');
+
+    // Set the opacity of .t-5 to 100%
+    $('.t-5').css('opacity', '1');
+  });
+});

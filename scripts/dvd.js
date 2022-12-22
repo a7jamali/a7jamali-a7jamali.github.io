@@ -13,9 +13,26 @@ const elements = [];
 
 for (const dvd of dvds) {
   // Generate a random starting position within the container
-  const x = Math.random() * (containerWidth - dvd.offsetWidth);
-  const y = Math.random() * (containerHeight - dvd.offsetHeight);
-
+  let x;
+  let y;
+  let overlaps;
+  do {
+    // Generate a random x and y position
+    x = Math.random() * (containerWidth - dvd.offsetWidth);
+    y = Math.random() * (containerHeight - dvd.offsetHeight);
+    overlaps = false;
+    // Check if the element overlaps with any other element
+    for (const otherElement of elements) {
+      if (x < otherElement.x + otherElement.element.offsetWidth &&
+          x + dvd.offsetWidth > otherElement.x &&
+          y < otherElement.y + otherElement.element.offsetHeight &&
+          y + dvd.offsetHeight > otherElement.y) {
+        overlaps = true;
+        break;
+      }
+    }
+  } while (overlaps);
+  
   // Generate a random value for the velocity (either positive or negative)
   const dx = Math.random() > 0.5 ? velocityX : -velocityX;
   const dy = Math.random() > 0.5 ? velocityY : -velocityY;
@@ -42,6 +59,30 @@ function updatePosition() {
     if (element.y + element.element.offsetHeight > containerHeight || element.y < 0) {
       element.dy = -element.dy;
     }
+
+// Check if the element has collided with any other element
+for (const otherElement of elements) {
+  if (element === otherElement) continue; // Skip the current element
+  if (element.x < otherElement.x + otherElement.element.offsetWidth &&
+      element.x + element.element.offsetWidth > otherElement.x &&
+      element.y < otherElement.y + otherElement.element.offsetHeight &&
+      element.y + element.element.offsetHeight > otherElement.y) {
+    // Reverse the velocity of both elements in the x and y directions
+    element.dx = -element.dx;
+    element.dy = -element.dy;
+    otherElement.dx = -otherElement.dx;
+    otherElement.dy = -otherElement.dy;
+  }
+}
+
+
+
+
+
+
+
+
+
 
     // Determine the angle of rotation based on the dx and dy values
     const angle = Math.atan2(element.dy, element.dx) * 180 / Math.PI;

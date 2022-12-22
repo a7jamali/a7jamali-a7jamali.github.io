@@ -131,9 +131,9 @@
   outline: none;
   border: none;
   color: #ffffff;
-  font-size: 60px;
+  font-size: 38px;
   cursor: pointer;
-  transition: color 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, color 0.25s ease-in-out;
   position: absolute;
   right: 20px;
 }
@@ -282,6 +282,9 @@
   background-repeat: no-repeat;
   background-size: 5% 5%;
   transition: opacity 0.333s ease-in-out;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
 }
 .home__inner-scribble {
   position: absolute;
@@ -685,10 +688,19 @@
   color: #ffffff;
   width: 100%;
   margin-bottom: 30px;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: "TTI", sans-serif;
+  font-weight: 700;
 }
 @media only screen and (min-width: 750px) {
   .contact__details-header {
     width: 50%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .contact__details-header {
+    font-size: 60px;
   }
 }
 .contact__details-div {
@@ -723,10 +735,19 @@
   color: #ffffff;
   width: 100%;
   margin-bottom: 30px;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: "TTI", sans-serif;
+  font-weight: 700;
 }
 @media only screen and (min-width: 750px) {
   .contact__sit-header {
     width: 50%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .contact__sit-header {
+    font-size: 60px;
   }
 }
 .contact__sit-div {
