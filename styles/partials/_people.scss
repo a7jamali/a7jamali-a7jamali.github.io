@@ -1,21 +1,11 @@
 #h1w {
-    margin: 0 66.7vw 0 20px;
+    margin: 0 50vw 0 20px;
 }
 
 .people {
 
     &__wrapper {
         display: flex;
-        margin:0 350vw 0 0;
-
-        @include tablet {
-            margin:0 350vw 0 0;
-
-        }
-        @include monitor {
-            margin:0 250vw 0 0;
-
-        }
     }
 
 
@@ -32,6 +22,7 @@
             left: 20px;
             position: relative;
             top: 20px;
+            margin-bottom: 160px;
         }
 
         
@@ -46,8 +37,13 @@
 
         @include tablet {
             flex-flow: row nowrap;
-            min-width: 99%;
             margin-bottom: 0;
+            margin-right: 25vw;
+
+            &-last {
+                margin-right: 0;
+            }
+
 
         }
 
@@ -56,6 +52,11 @@
             // margin-bottom: 30vw;
             margin-bottom: 0;
             height: 100%;
+
+            &-last {
+                margin-right: 10vw;
+            }
+
 
         }
 
@@ -69,7 +70,7 @@
         aspect-ratio: 1 !important;
 
         @include tablet {
-            width: 40%;
+            width: 360px;
             aspect-ratio: 1 !important;
             margin-right: 30px;
         }
@@ -85,6 +86,7 @@
         color: #FFFFFF;
         letter-spacing: 1px;
         text-align: left;
+        margin-top: 20%;
     }
 
     &__name {
@@ -98,13 +100,15 @@
     }
 
     &__bio {
-        font-family: sans-serif;
+        font-family: "TTI", sans-serif;
+        font-weight: 400;
         font-size: 12px;
         color: #FFFFFF;
         letter-spacing: 0.25px;
         line-height: 18px;
         height: 50%;
         overflow: scroll;
+        width: 360px;
     }
 
     &__textbox {
@@ -129,6 +133,7 @@
         flex-flow: column nowrap;
         margin-bottom: 80px;
         padding: 40px 20px;
+        align-items: center;
 
         @include tablet {
             flex-flow: row nowrap;
@@ -138,7 +143,7 @@
     }
 
     &__img {
-        width: 100%;
+        width: 360px;
         aspect-ratio: 1 !important;
 
         @include tablet {
@@ -171,11 +176,13 @@
     }
 
     &__bio {
-        font-family: sans-serif;
+        font-family: "TTI", sans-serif;
+        font-weight: 400;
         font-size: 12px;
         color: #FFFFFF;
         letter-spacing: 0.25px;
         line-height: 18px;
+        width: 360px;
     }
 
     &__textbox {

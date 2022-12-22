@@ -420,22 +420,11 @@
 }
 
 #h1w {
-  margin: 0 66.7vw 0 20px;
+  margin: 0 50vw 0 20px;
 }
 
 .people__wrapper {
   display: flex;
-  margin: 0 350vw 0 0;
-}
-@media only screen and (min-width: 750px) {
-  .people__wrapper {
-    margin: 0 350vw 0 0;
-  }
-}
-@media only screen and (min-width: 1000px) {
-  .people__wrapper {
-    margin: 0 250vw 0 0;
-  }
 }
 .people__h1 {
   color: #ffffff;
@@ -451,6 +440,7 @@
   left: 20px;
   position: relative;
   top: 20px;
+  margin-bottom: 160px;
 }
 .people__div {
   width: 100%;
@@ -462,14 +452,20 @@
 @media only screen and (min-width: 750px) {
   .people__div {
     flex-flow: row nowrap;
-    min-width: 99%;
     margin-bottom: 0;
+    margin-right: 25vw;
+  }
+  .people__div-last {
+    margin-right: 0;
   }
 }
 @media only screen and (min-width: 1000px) {
   .people__div {
     margin-bottom: 0;
     height: 100%;
+  }
+  .people__div-last {
+    margin-right: 10vw;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -483,7 +479,7 @@
 }
 @media only screen and (min-width: 750px) {
   .people__img {
-    width: 40%;
+    width: 360px;
     aspect-ratio: 1 !important;
     margin-right: 30px;
   }
@@ -496,6 +492,7 @@
   color: #FFFFFF;
   letter-spacing: 1px;
   text-align: left;
+  margin-top: 20%;
 }
 .people__name {
   font-size: 1.5rem;
@@ -506,13 +503,15 @@
   text-align: left;
 }
 .people__bio {
-  font-family: sans-serif;
+  font-family: "TTI", sans-serif;
+  font-weight: 400;
   font-size: 12px;
   color: #FFFFFF;
   letter-spacing: 0.25px;
   line-height: 18px;
   height: 50%;
   overflow: scroll;
+  width: 360px;
 }
 @media only screen and (min-width: 750px) {
   .people__textbox {
@@ -531,6 +530,7 @@
   flex-flow: column nowrap;
   margin-bottom: 80px;
   padding: 40px 20px;
+  align-items: center;
 }
 @media only screen and (min-width: 750px) {
   .people__m__wrapper {
@@ -540,7 +540,7 @@
   }
 }
 .people__m__img {
-  width: 100%;
+  width: 360px;
   aspect-ratio: 1 !important;
 }
 @media only screen and (min-width: 750px) {
@@ -568,11 +568,13 @@
   text-align: left;
 }
 .people__m__bio {
-  font-family: sans-serif;
+  font-family: "TTI", sans-serif;
+  font-weight: 400;
   font-size: 12px;
   color: #FFFFFF;
   letter-spacing: 0.25px;
   line-height: 18px;
+  width: 360px;
 }
 @media only screen and (min-width: 750px) {
   .people__m__textbox {
@@ -701,9 +703,10 @@
 }
 .contact__details-text {
   font-family: "TTI-mono", monospace;
+  font-weight: 400;
   color: #ffffff;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 46px;
 }
 .contact__sit-wrapper {
