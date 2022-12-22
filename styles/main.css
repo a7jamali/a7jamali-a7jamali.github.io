@@ -312,7 +312,7 @@
   color: #ffffff;
   font-family: "TTI", sans-serif;
   font-weight: 700;
-  font-size: 5vw;
+  font-size: 10vw;
   margin: 250px 0;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -349,6 +349,34 @@
     display: none;
   }
 }
+.manifesto__bar-left {
+  position: fixed;
+  width: 20px;
+  height: 100vh;
+  background: #12181f;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+}
+@media only screen and (min-width: 750px) {
+  .manifesto__bar-left {
+    display: none;
+  }
+}
+.manifesto__bar-right {
+  position: fixed;
+  width: 20px;
+  height: 100vh;
+  background: #12181f;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
+}
+@media only screen and (min-width: 750px) {
+  .manifesto__bar-right {
+    display: none;
+  }
+}
 .manifesto__svg {
   width: 100%;
   margin: 200px 0;
@@ -357,13 +385,13 @@
 }
 .manifesto__text-white {
   color: #ffffff;
-  font-size: 3.4vw;
+  font-size: 8.5vw;
   margin: 200px 0;
   font-family: "TTI", sans-serif;
 }
 .manifesto__text-orange {
   color: #DB643B;
-  font-size: 1.5vw;
+  font-size: 4vw;
   margin: 200px 0 20vh 0;
   font-family: "TTI", sans-serif;
 }

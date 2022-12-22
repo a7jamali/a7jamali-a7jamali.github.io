@@ -6,7 +6,7 @@
         color: $white;
         font-family: "TTI", sans-serif;
         font-weight: 700;
-        font-size: 5vw;
+        font-size: 10vw;
         margin: 250px 0;
         width: max-content;
         background: url("../../assets/backgrounds/scribble.svg");
@@ -48,6 +48,28 @@
 
         }
 
+        &-left {
+            position: fixed;
+            width: 20px;
+            height: 100vh;
+            background: $midnight;
+            bottom: 0;
+            left: 0;
+            z-index: 9999;
+            @include tablet {display: none;}
+        }
+
+        &-right {
+            position: fixed;
+            width: 20px;
+            height: 100vh;
+            background: $midnight;
+            bottom: 0;
+            right: 0;
+            z-index: 9999;
+            @include tablet {display: none;}
+        }
+
     }
 
     
@@ -63,7 +85,7 @@
 
         &-white {
             color: $white;
-            font-size: 3.4vw;
+            font-size: 8.5vw;
             margin: 200px 0;
             font-family: "TTI", sans-serif;
 
@@ -72,7 +94,7 @@
 
         &-orange {
             color: $orange;
-            font-size: 1.5vw;
+            font-size: 4vw;
             margin: 200px 0 20vh 0;
             font-family: "TTI", sans-serif;
 

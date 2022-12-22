@@ -180,7 +180,6 @@
   .fold-bottom {
     left: 64.5px;
     position: relative;
-    width: 40vw;
   }
 }
 
@@ -194,7 +193,6 @@
   .fold-top {
     left: 64.5px;
     position: relative;
-    width: 40vw;
   }
 }
 
@@ -208,13 +206,13 @@
 
 .fold-center {
   height: 50vh;
-  width: 50vw;
+  width: calc(100vw - 40px);
 }
 @media only screen and (min-width: 750px) {
   .fold-center {
     left: 64.5px;
     position: relative;
-    width: 40vw;
+    width: 50vw;
     height: 70vh;
   }
 }

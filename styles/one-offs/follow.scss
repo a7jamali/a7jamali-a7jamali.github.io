@@ -202,7 +202,6 @@
 	@include tablet {
 		left: 64.5px;
 		position: relative;
-		width: 40vw;	
 	}
 
   }
@@ -216,7 +215,6 @@
 	@include tablet {
 		left: 64.5px;
 		position: relative;
-		width: 40vw;	
 	}
 
   }
@@ -228,13 +226,13 @@
   }
   .fold-center {
     height: 50vh;
-    width: 50vw;
+    width: calc(100vw - 40px);
 	// background: blue;
 
 	@include tablet {
 		left: 64.5px;
 		position: relative;
-		width: 40vw;	
+		width: 50vw;	
 		height: 70vh;
 	}
 
