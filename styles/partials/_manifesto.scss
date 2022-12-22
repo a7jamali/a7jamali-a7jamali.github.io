@@ -15,7 +15,7 @@
 
 
         @include tablet {
-            // font-size: 80px;
+            font-size: 80px;
 
 
         }
@@ -89,6 +89,10 @@
             margin: 200px 0;
             font-family: "TTI", sans-serif;
 
+            @include tablet {
+                font-size: 4.5vw;
+            }
+
 
         }
 
@@ -101,6 +105,8 @@
 
             @include tablet {
                 margin: 200px 0 40vh 0;
+                font-size: 2.4vw;
+
 
 
             }

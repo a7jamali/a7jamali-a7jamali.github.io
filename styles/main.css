@@ -321,6 +321,11 @@
   background-size: cover;
   text-transform: uppercase;
 }
+@media only screen and (min-width: 750px) {
+  .manifesto__head {
+    font-size: 80px;
+  }
+}
 .manifesto__bar-top {
   position: fixed;
   width: 100vw;
@@ -389,6 +394,11 @@
   margin: 200px 0;
   font-family: "TTI", sans-serif;
 }
+@media only screen and (min-width: 750px) {
+  .manifesto__text-white {
+    font-size: 4.5vw;
+  }
+}
 .manifesto__text-orange {
   color: #DB643B;
   font-size: 4vw;
@@ -398,6 +408,7 @@
 @media only screen and (min-width: 750px) {
   .manifesto__text-orange {
     margin: 200px 0 40vh 0;
+    font-size: 2.4vw;
   }
 }
 
