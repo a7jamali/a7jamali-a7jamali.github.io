@@ -55,7 +55,7 @@
         let scroller;
         if (createScrollers) {
           scroller = document.createElement("div");
-          scroller.classList.add("fold-scroller");
+          scroller.classList.add("mobile__fold-scroller");
           fold.append(scroller);
         } else {
           scroller = this.scrollers[i];
@@ -206,7 +206,7 @@
   }
 
   const toggleDebug = () => {
-    document.body.classList.toggle("debug");
+    document.body.classList.toggle("mobile__debug");
   };
   btn.addEventListener("click", toggleDebug);
 
@@ -258,7 +258,7 @@
   // Preload images
   const preloadImages = () => {
     return new Promise((resolve, reject) => {
-      imagesLoaded(document.querySelectorAll('.content__img'), resolve);
+      imagesLoaded(document.querySelectorAll('.mobile__content__img'), resolve);
     });
   };
   

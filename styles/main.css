@@ -5,6 +5,11 @@
 }
 @font-face {
   font-family: "TTI";
+  src: url("../assets/fonts/tt-interphases/tti-600.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "TTI";
   src: url("../assets/fonts/tt-interphases/tti-700.ttf") format("truetype");
   font-weight: 700;
 }
@@ -197,14 +202,30 @@
 }
 
 .splash__wrapper {
-  width: 80%;
-  height: 20%;
+  width: 100vw;
+  height: 100vh;
+  background: url("../../assets/backgrounds/splash-flat.png") no-repeat center center, url("../../assets/backgrounds/splash-flat-bg-01.png") repeat-x center center;
+  position: relative;
+  background-size: contain;
+}
+.splash__div {
+  background: #12181f;
+  width: 300px;
+  height: 80px;
   display: flex;
   flex-flow: row wrap;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+  bottom: 20%;
 }
 @media only screen and (min-width: 750px) {
-  .splash__wrapper {
+  .splash__div {
     flex-flow: row nowrap;
+    bottom: 10%;
+    width: 750px;
   }
 }
 .splash__name-div {
@@ -224,12 +245,18 @@
 }
 .splash__name-heading {
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   font-family: "TTI", sans-serif;
+  font-weight: 700;
+}
+@media only screen and (min-width: 750px) {
+  .splash__name-heading {
+    font-size: 2rem;
+  }
 }
 .splash__graphics-div {
   width: 100%;
@@ -245,7 +272,7 @@
 }
 .splash__graphics-svg {
   height: 100%;
-  width: 100%;
+  width: 100% !important;
 }
 .splash__enter-div {
   width: 50%;
@@ -264,8 +291,15 @@
 }
 .splash__enter-link {
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-decoration: none;
+  font-family: "TTI", sans-serif;
+  font-weight: 700;
+}
+@media only screen and (min-width: 750px) {
+  .splash__enter-link {
+    font-size: 2rem;
+  }
 }
 
 .home__outer {
@@ -510,7 +544,8 @@
 .people__title {
   margin: 8px 0;
   text-transform: uppercase;
-  font-family: sans-serif;
+  font-family: "TTI", sans-serif;
+  font-weight: 400;
   font-size: 10px;
   color: #FFFFFF;
   letter-spacing: 1px;
@@ -520,7 +555,8 @@
 .people__name {
   font-size: 1.5rem;
   margin-bottom: 16px;
-  font-family: sans-serif;
+  font-family: "TTI", sans-serif;
+  font-weight: 600;
   font-size: 36px;
   color: #FFFFFF;
   text-align: left;

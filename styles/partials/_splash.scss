@@ -1,13 +1,34 @@
 .splash {
 
+
     &__wrapper {
-        width: 80%;
-        height: 20%;
+        width: 100vw;
+        height: 100vh;
+        background: url("../../assets/backgrounds/splash-flat.png") no-repeat center center, url("../../assets/backgrounds/splash-flat-bg-01.png") repeat-x center center;
+        position: relative;
+        background-size: contain;
+
+    }
+
+    &__div {
+        background: $midnight;
+        width: 300px;
+        height: 80px;
         display: flex;
         flex-flow: row wrap;
+        position: absolute;
+        margin-left: auto; 
+        margin-right: auto; 
+        right: 0;
+        left: 0;
+        bottom: 20%;
 
         @include tablet {
             flex-flow: row nowrap;
+            bottom: 10%;
+            width: 750px;
+
+
         }
     }
 
@@ -32,9 +53,15 @@
 
         &-heading {
             color: $white;
-            font-size: 2rem;
+            font-size: 1.5rem;
             user-select: none;
             font-family: "TTI", sans-serif;
+            font-weight: 700;
+
+            @include tablet {
+                font-size: 2rem;
+            }
+
 
         }
     }
@@ -58,7 +85,7 @@
 
         &-svg {
             height: 100%;
-            width: 100%;
+            width: 100% !important;
         }
     }
     
@@ -79,6 +106,7 @@
             @include tablet {
                 order: 3;
                 min-width: 25%;
+                
 
             }
 
@@ -86,8 +114,15 @@
 
         &-link {
             color: $white;
-            font-size: 2rem;
+            font-size: 1.5rem;
             text-decoration: none;
+            font-family: "TTI", sans-serif;
+            font-weight: 700;
+
+            @include tablet {
+                font-size: 2rem;
+            }
+
         }
     }
     
