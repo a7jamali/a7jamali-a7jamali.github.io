@@ -76,7 +76,7 @@
 
     &__svg {
         width: 100%;
-        margin: 200px 0;
+        margin: 100px 0;
         overflow-x: visible;
         position: relative;
     }
@@ -86,7 +86,7 @@
         &-white {
             color: $white;
             font-size: 8.5vw;
-            margin: 200px 0;
+            margin: 100px 0;
             font-family: "TTI", sans-serif;
 
             @include tablet {
@@ -99,12 +99,12 @@
         &-orange {
             color: $orange;
             font-size: 4vw;
-            margin: 200px 0 20vh 0;
+            margin: 100px 0 20vh 0;
             font-family: "TTI", sans-serif;
 
 
             @include tablet {
-                margin: 200px 0 40vh 0;
+                margin: 100px 0 40vh 0;
                 font-size: 2.4vw;
 
 

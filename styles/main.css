@@ -448,14 +448,14 @@
 }
 .manifesto__svg {
   width: 100%;
-  margin: 200px 0;
+  margin: 100px 0;
   overflow-x: visible;
   position: relative;
 }
 .manifesto__text-white {
   color: #ffffff;
   font-size: 8.5vw;
-  margin: 200px 0;
+  margin: 100px 0;
   font-family: "TTI", sans-serif;
 }
 @media only screen and (min-width: 750px) {
@@ -466,12 +466,12 @@
 .manifesto__text-orange {
   color: #DB643B;
   font-size: 4vw;
-  margin: 200px 0 20vh 0;
+  margin: 100px 0 20vh 0;
   font-family: "TTI", sans-serif;
 }
 @media only screen and (min-width: 750px) {
   .manifesto__text-orange {
-    margin: 200px 0 40vh 0;
+    margin: 100px 0 40vh 0;
     font-size: 2.4vw;
   }
 }
