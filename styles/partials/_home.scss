@@ -32,21 +32,41 @@
 
 
         &-link {
-            font-size: 3vw;
+            font-size: 8vw;
             font-family: "TTI", sans-serif;
             text-decoration: none;
             color: $white;
             text-transform: uppercase;
+
+            @include tablet {
+                font-size: 6vw;
+            }
+
+
+
+            @include monitor {
+                font-size: 4vw;
+            }
+
         }
         
 
         &-arrow {
             margin-left: 5px;
             // background: red;
-            font-size: 3vw;
+            font-size: 8vw;
             font-family: "TTI", sans-serif;
             text-decoration: none;
             color: $white;
+
+            @include tablet {
+                font-size: 6vw;
+            }
+
+
+            @include monitor {
+                font-size: 4vw;
+            }
 
         }
 

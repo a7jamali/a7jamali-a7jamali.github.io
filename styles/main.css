@@ -294,18 +294,38 @@
   height: 100%;
 }
 .home__inner-link {
-  font-size: 3vw;
+  font-size: 8vw;
   font-family: "TTI", sans-serif;
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
 }
+@media only screen and (min-width: 750px) {
+  .home__inner-link {
+    font-size: 6vw;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .home__inner-link {
+    font-size: 4vw;
+  }
+}
 .home__inner-arrow {
   margin-left: 5px;
-  font-size: 3vw;
+  font-size: 8vw;
   font-family: "TTI", sans-serif;
   text-decoration: none;
   color: #ffffff;
+}
+@media only screen and (min-width: 750px) {
+  .home__inner-arrow {
+    font-size: 6vw;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .home__inner-arrow {
+    font-size: 4vw;
+  }
 }
 .home__inner-bg {
   position: absolute;
@@ -645,7 +665,7 @@
   background: url("../../assets/backgrounds/scribble.svg");
   background-size: cover;
   position: absolute;
-  top: 20px;
+  top: 40%;
   left: 20px;
   text-transform: uppercase;
 }
